@@ -36,7 +36,7 @@ export default function ContactSection() {
         setStatus('Something went wrong. Please try again.');
       }
     } catch (error) {
-      setStatus('Network error. Please try again later.');
+      setStatus(`Network error. Please try again later. Error ${error}`);
     }
   };
 
@@ -54,7 +54,7 @@ export default function ContactSection() {
         <h2 className="text-3xl font-bold text-[var(--foreground)]">Let’s Connect and Build Together 🤝</h2>
 
         <p className="text-[var(--foreground)]/80 text-lg">
-          Whether you're looking for a collaborator, need help with your product, or want to grab a virtual coffee — I'm just a message away.
+          {`Whether you're looking for a collaborator, need help with your product, or want to grab a virtual coffee — I'm just a message away.`}
         </p>
 
         <form onSubmit={handleSubmit} className="w-full mt-8 space-y-4">

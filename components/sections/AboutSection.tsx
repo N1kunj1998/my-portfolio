@@ -38,20 +38,20 @@ export default function AboutSection() {
           className="md:w-2/3 text-[var(--foreground)]"
         >
           <p className="text-lg leading-relaxed mb-4">
-            Hey there! I'm Nikunj, a Fullstack Developer with a strong foundation in Computer Science
+            {`Hey there! I'm Nikunj, a Fullstack Developer with a strong foundation in Computer Science
             and a deep passion for building high-impact web applications. I hold a Master’s in
             Computer Science from IIIT Bangalore and have had the opportunity to work at top companies
-            like Qualcomm and Spirinova.
+            like Qualcomm and Spirinova.`}
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            I specialize in React, Next.js, TypeScript, Node.js, and FastAPI, and enjoy working across
+            {`I specialize in React, Next.js, TypeScript, Node.js, and FastAPI, and enjoy working across
             the stack — whether it’s designing frontend components with beautiful UI/UX or crafting
             scalable APIs. I'm also experienced with data visualization using Plotly.js and real-time
-            features with MongoDB and Redis.
+            features with MongoDB and Redis.`}
           </p>
           <p className="text-lg leading-relaxed mb-4">
-            I’m always curious about solving problems through technology, love clean code, and aim to
-            contribute to impactful, developer-friendly products.
+            {`I’m always curious about solving problems through technology, love clean code, and aim to
+            contribute to impactful, developer-friendly products.`}
           </p>
           <a
             href="/about"
