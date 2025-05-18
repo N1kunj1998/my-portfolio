@@ -11,7 +11,7 @@ export default function LatestBlogSection() {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blog`, { cache: 'no-store' });
+      const res = await fetch(`/api/blog`, { cache: 'no-store' });
       const data = await res.json();
       setBlogs(data.slice(0, 10)); // latest 10
     };
