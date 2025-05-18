@@ -2,6 +2,7 @@
 import AboutPreview from '@/components/sections/AboutSection'
 import ContactSection from '@/components/sections/ContactSection'
 import HeroSection from '@/components/sections/HeroSection'
+import LatestBlogSection from '@/components/sections/LatestBlogSection'
 import ProjectsPreview from '@/components/sections/ProjectsSection'
 import TimelineSection from '@/components/sections/TimelineSection'
 
@@ -12,6 +13,7 @@ export default function HomePage() {
       <AboutPreview />
       <TimelineSection />
       <ProjectsPreview />
+      <LatestBlogSection />
       <ContactSection />
     </main>
   )
