@@ -2,7 +2,9 @@ import { connectToDB } from '@/lib/db';
 import Blog from '@/models/Blog';
 import { NextResponse } from 'next/server';
 
-export async function GET(_req: Request, { params }: { params: { slug: string } }) {
+type GetParams = { params: { slug: string } };
+
+export async function GET(_req: Request, { params }: GetParams) {
   try {
     await connectToDB();
     const blog = await Blog.findOne({ slug: params.slug });
