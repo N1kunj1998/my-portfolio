@@ -10,7 +10,7 @@ export async function GET() {
     const blogs = await Blog.find({ isPublished: true }).sort({ publishedAt: -1 });
     return NextResponse.json(blogs);
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to fetch blogs' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to fetch blogs', msg: error }, { status: 500 });
   }
 }
 

@@ -13,6 +13,6 @@ export async function GET(_req: Request, { params }: { params: { slug: string } 
 
     return NextResponse.json(blog);
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to fetch blog' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to fetch blog', msg: error }, { status: 500 });
   }
 }

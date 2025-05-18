@@ -6,6 +6,6 @@ export async function GET() {
     await connectToDB();
     return NextResponse.json({ status: 'success' });
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to connect to DB' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to connect to DB', msg: error }, { status: 500 });
   }
 }
