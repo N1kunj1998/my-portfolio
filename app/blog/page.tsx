@@ -9,7 +9,7 @@ export default function BlogPage() {
 
   useEffect(() => {
     const fetchBlogs = async () => {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/blog`, {
+      const res = await fetch(`/api/blog`, {
         cache: 'no-store',
       });
       const data = await res.json();
