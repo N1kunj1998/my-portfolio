@@ -36,6 +36,6 @@ export async function POST(req: Request) {
 
     return NextResponse.json(newBlog);
   } catch (error) {
-    return NextResponse.json({ error: 'Failed to create blog' }, { status: 500 });
+    return NextResponse.json({ error: 'Failed to create blog', msg: error }, { status: 500 });
   }
 }
